@@ -33,7 +33,7 @@ function newQuote() {
     <img src="images/testimonial-2.jpg" alt="">
     </div>    
     <h2 class="text-center animate__animated animate__fadeInLeft">"${quotesConainers[randamNum].quote}"</h2>
-    <h3 class="text-center animate__animated animate__fadeInLeft" >--${quotesConainers[randamNum].author}</h3>
+    <h3 class="text-center pb-4 animate__animated animate__fadeInLeft" >--${quotesConainers[randamNum].author}</h3>
     `;
   document.getElementById("quotes").innerHTML = cartona;
 }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Quotes App</title>
+  </head>
+  <body class="bg-dark text-white">
+    <section class="mt-4">
+      <h1 class="text-center fw-bolder mb-4 animate__animated animate__bounce">
+        Quotes of the Day
+      </h1>
+      <p class="text-center fs-2 fw-bold mb-5">
+        Press the button below to recieve a random quote!
+      </p>
+      <div class="quotes bg-gradient overflow-hidden my-4" id="quotes"></div>
+      <button
+        onclick="newQuote()"
+        class="btn btn-outline-primary px-5 py-3 my-4 position-relative start-50 translate-middle-x"
+      >
+        New Qoute
+      </button>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

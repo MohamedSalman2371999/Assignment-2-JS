@@ -1,0 +1,16 @@
+h1 {
+  font-size: 4.725rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: white;
+}
+.img-container {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: aquamarine;
+}
+.img-container img {
+  width: 100%;
+  border-radius: 50%;
+}

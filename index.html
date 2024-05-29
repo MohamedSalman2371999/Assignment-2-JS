@@ -3,26 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Quotes App</title>
   </head>
   <body class="bg-dark text-white">
     <section class="mt-4">
-      <h1 class="text-center fw-bolder mb-4 animate__animated animate__bounce">
-        Quotes of the Day
-      </h1>
+      <div class="head-of-book-marker m-auto pt-3 mb-4 text-white animate__animated animate__fadeInDown cssanimation effect3d">
+        <h1 class="text-center">Quotes of the Day</h1>
+        <div class="back-ground"></div>
+      </div>
       <p class="text-center fs-2 fw-bold mb-5">
         Press the button below to recieve a random quote!
       </p>
-      <div
-        class="quotes bg-gradient shadow m-auto overflow-hidden my-4"
-        id="quotes"
-      ></div>
+      <div class="quotes bg-gradient shadow m-auto overflow-hidden my-4" id="quotes">
+        <div class="img-container my-4 animate__animated animate__flipInX">
+          <img src="images/testimonial-2.jpg" alt="">
+          </div>    
+          <h2 id="quoteName" class="text-center animate__animated animate__fadeInLeft"> "It's not what happens to you, but how you react to it that matters."</h2>
+          <h3 class="text-center pb-4 animate__animated animate__fadeInLeft" >--Epictetus</h3>
+      </div>
       <button
         onclick="newQuote()"
         class="btn btn-outline-primary px-5 py-3 position-relative start-50 translate-middle-x"
@@ -30,6 +39,24 @@
         New Qoute
       </button>
     </section>
+
+<!-- 
+    <h1 class="text-center fw-bolder mb-4 animate__animated animate__bounce">
+      Quotes of the Day
+    </h1>
+    <p class="text-center fs-2 fw-bold mb-5">
+      Press the button below to recieve a random quote!
+    </p>
+    <div class="card">
+      <div class="quotes overflow-hidden my-3" id="quotes"></div>
+      <button
+        onclick="newQuote()"
+        class="btn btn-outline-light fw-bold w-25 py-3 my-3 position-relative start-50 translate-middle-x"
+      >
+        New Qoute
+      </button>
+    </div> -->
+
     <script src="js/main.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
